@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: black;
+    background-color: #FCE386;
+    padding: 0;
+    margin: 0;  
+}
+
+.logo {
+    font-weight: 800;
+    color: white;
+    font-size: 170%;
+    cursor: pointer;
+}
+
+.twitter {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    background-color: #FC6C6C;
+    right: 0;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    padding: 0 5vw;
+    align-items: center;
+    gap: 1em;
+    height: 80px;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 25px;
+    width: 30%;
+    border-radius: 20px;
+    padding: 2px 12px;
+
+}
+
+.barra input {
+    background: transparent;
+    border: 0;
+    outline: none;
+    flex: 1;
+}
+
+.barra button {
+    width: 18px;
+    height: 18px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.barra button img {
+    width: 18px;
+    height: 18px;
+}
+
+.menu {
+    display: none;
+}
+
+li, a {
+    text-decoration: none;
+    color: black;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0px 40px 0 0px;
+    transition: all 0.3s;
+}
+
+header ul li:hover {
+    transform: scale(110%);
+}
+
+header ul a {
+    color: white;
+}
+
+/* .inicial {
+
+}
+ */
+.Novidade_Inverno{
+    height:100vh;
+    width:100%;
+    background-color:#46DB70;
+}
+
+.Inicial_Produtos{
+    display: block;
+    height:50vh;
+    width:100%;
+    background-color:white;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.Inicial_Produto{
+    height:80%;
+    width:25%;
+    border-radius:10%;
+}
+
+.Raposa{
+    background-color: #D9D9D9;
+    display:flex;
+    align-items:center;
+}
+
+    .Inicial_Img{
+        width:50%;
+        height:90%;
+        display:flex;
+        align-items:center;
+    }
+
+    .Inicial_Img img{
+        width:108%;
+    }
+
+    .Inicial_Text{
+        width:50%;
+        height:90%;
+    }
+
+.Praia{
+    background-color: #FF6B6B;
+}
+
+.Furao{
+    background-color:#D9D9D9;
+}
+
+.colecoes {
+    padding: 80px 10%;
+    height: 100vh;
+}
+
+.produtos {
+    padding: 80px 10%;
+    height: 100vh;
+    z-index: -100000;
+}
+
+.banner-produtos {
+    color: #111;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 0px;
+    z-index: 1;
+    color: white;
+
+}
+
+.banner-fundo {
+    background-image: url('https://img.freepik.com/free-photo/cute-fluffy-bear-toys_23-2149642374.jpg?w=2000');
+    filter: brightness(60%);
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+ 
+.banner-produtos h1 {
+    font-size: 80px;
+    filter: brightness(100%);
+}
+
+.banner-produtos p {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.grid-prdt-produtos {
+    margin-top: 300px;
+    display: grid;
+    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(4 , minmax(100px, 1fr));
+    gap: 1em;
+}
+
+.produto-produtos {
+    background-color: white;
+    border-radius: 20px;
+    height: 300px;
+    padding: 10px;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    transition: all 0.3s;
+}
+
+.produto-produtos:hover {
+    transform: scale(103%);
+}
+
+.img-prdt-produtos {
+    height: 80%;
+    width: 80%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+
+.item-1-produtos {
+    background-image: url('https://mybtoys.com/wp-content/uploads/LB1904_PR.png');
+}
+
+.item-2-produtos {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYZfN_ss81tcJsWl01ZHZkYC862O_OMd6zWQ&usqp=CAU');
+}
+
+.item-3-produtos {
+    background-image: url('https://cdn.shopify.com/s/files/1/0529/8693/7544/products/631_CHAR_840px_large.png?v=1631621515');
+}
+
+.item-4-produtos {
+    background-image: url('https://cdn.shopify.com/s/files/1/0125/8261/7145/products/Apple_Cat_Plush_Toy-SV4-P-4_1000x.png.webp?v=1679323696');
+}
+
+/* @keyframes arcoiris {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.animation-arcoiris {
+    animation-name: arcoiris;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+ */
+.about {
+    padding: 80px 10%; 
+    height: 100vh;
+}
+
+footer {
+    background-color: #FC6C6C;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5vw;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        transform: scale(100%);
+    }
+
+    header nav {
+        display: none;
+    }
+    
+    .barra {
+        width: 50%;
+    }
+    
+    .menu {
+        display: block;
+        filter: invert(100%);
+        cursor: pointer;
+    }
+
+    .twitter {
+        display: none;
+    }
+}
